@@ -8,7 +8,7 @@ class ProductNotBelongsToUser extends Exception
 {
     public function render(){
         return [
-            'data' => 'Product Not Belongs to User'
+            'errors' => 'Product Not Belongs to User'
         ];
     }
 }
