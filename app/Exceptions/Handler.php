@@ -49,10 +49,10 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        /*
+        
         if($request->expectsJson()){
-            return $this->apiExceptions($request,$exception);
-            
+            return $this->apiExceptions($request, $exception);
+            /*
             if($exception instanceof ModelNotFoundException){
             
                 return response()->json([
@@ -65,9 +65,9 @@ class Handler extends ExceptionHandler
                     'errors' => 'Incorrect route'
                 ], Response::HTTP_NOT_FOUND);
             }
-           
+           */
         }
-         */
+         
         return parent::render($request, $exception);
     }
 }
